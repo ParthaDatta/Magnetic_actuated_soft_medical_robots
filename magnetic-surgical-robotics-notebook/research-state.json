@@ -1,0 +1,18 @@
+{
+  "project": "Magnetic Actuation-Based Surgical Robotics",
+  "created": "2026-08-30",
+  "current_focus": [
+    "evidence map",
+    "clinical translation",
+    "magnetic actuation + sensing + control integration",
+    "failure-mode driven idea generation"
+  ],
+  "idea_count": 6,
+  "next_actions": [
+    "extract 187-study corpus from 2026 systematic review",
+    "deep-read 2026 FBG soft suction paper",
+    "deep-read SMOL localization",
+    "search force-sensing magnetic surgical tools",
+    "search local/hybrid actuation at realistic patient depth"
+  ]
+}
