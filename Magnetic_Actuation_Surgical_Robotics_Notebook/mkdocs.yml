@@ -1,0 +1,25 @@
+site_name: Magnetic Actuation for Surgical Robotics
+site_description: Executable derivations and primary literature for magnetic minimally invasive surgery
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+nav:
+  - Home: index.md
+  - 1. Fundamentals: 01_fundamentals.md
+  - 2. EPM–IPM derivation: 02_epm_ipm_derivation.md
+  - 3. Actuation architectures: 03_actuation_architectures.md
+  - 4. Surgical applications: 04_surgical_applications.md
+  - 5. Control and planning: 05_control_planning.md
+  - 6. Calibration and safety: 06_calibration_validation_safety.md
+  - 7. Paper-to-equation map: 07_paper_to_equation_map.md
+  - 8. Reading roadmap: 08_reading_roadmap.md
