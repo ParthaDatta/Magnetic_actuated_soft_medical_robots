@@ -22,14 +22,14 @@
 ```text
 /home/partha/research/magnetic_robotics/MagRobot/
 ├── demo_c/
-│   ├── main.py                          # Main SOFA entry; locally supports MAGROBOT_SCENE_CONFIG
-│   ├── case3_dual_aligned.py            # Independent Linux two-arm extension, manager-generated
+│   ├── main.py                          # Main SOFA initiation; locally supports MAGROBOT_SCENE_CONFIG
+│   ├── case3_dual_aligned.py            # Independent Linux two-arm extension
 │   ├── GUI_interface/
-│   │   ├── ceshi.txt                    # Legacy default, mutable — do not treat as a baseline
-│   │   ├── case2_working_backup.txt     # User-verified preservation of Case 2
+│   │   ├── ceshi.txt                    
+│   │   ├── case2_working_backup.txt     
 │   │   ├── info_wire_rob_hard_bronchus_nc.txt
 │   │   ├── info_capsule_rob.txt
-│   │   └── saved_scenes/                 # Immutable-by-convention case snapshots
+│   │   └── saved_scenes/                
 │   │       ├── case1_bronchoscopy.json
 │   │       ├── case2_endovascular.json
 │   │       └── case3a.json
@@ -47,9 +47,9 @@
 ├── run_scene_case3_2arms_1capsule.sh
 └── run_scene_case3_2arms_2capsules.sh
 
-/home/partha/manage_magrobot_scenes.py     # Single master manager; update IN PLACE
-/home/partha/magrobot_sofa25_migrate.py    # Earlier migration script; archive, do not rerun blindly
-/home/partha/magrobot_case2_runtime_fix.py # Earlier diagnostic script; archive, do not rerun blindly
+/home/partha/manage_magrobot_scenes.py     # To run the SOFA from python command
+/home/partha/magrobot_sofa25_migrate.py    # The original code is windows based, the Linux version needs plugin migration
+/home/partha/magrobot_case2_runtime_fix.py # Case 2 scene generation code in SOFA
 ```
 
 **Rule:** All new iterations of the manager must retain the filename `manage_magrobot_scenes.py`. Do not accumulate `fix_1.py`, `(1).py`, or alternate launchers unless deliberately starting a new experiment branch. **Keep a Git commit for each validated milestone**; the filename stays stable but revision history remains recoverable.
