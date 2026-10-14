@@ -179,11 +179,9 @@ Upstream Windows README documents `Ctrl+Up/Down` for insertion/retraction and `C
 cd ~/research/magnetic_robotics/MagRobot
 git remote -v
 git status --short
-# If upstream remote exists, do not push to it without authorization.
 git checkout -b linux-sofa25-research
 mkdir -p docs/linux docs/technical experiments/baselines
 cp /home/partha/manage_magrobot_scenes.py docs/linux/manage_magrobot_scenes.py
-# Copy README_LINUX.md and the companion .tex / .pdf into docs/ with the installer below.
 git add README_LINUX.md docs/linux docs/technical experiments/baselines
 git commit -m "Document Linux SOFA baseline and code architecture"
 ```
